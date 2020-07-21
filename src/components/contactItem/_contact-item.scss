@@ -1,0 +1,47 @@
+
+
+.contact-item {
+    width: auto;
+    height: 30px;
+    margin-bottom: $spacing-normal;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    &:hover {
+        color: $main-color;
+        transition: 0.3s;
+        cursor: pointer;
+        svg {
+            fill: $main-color;
+            transition: 0.3s;
+        }
+    }
+
+    &__logo{
+        padding: 0 $spacing-normal;
+    }
+
+    &__text{
+        padding: 0;
+        font-size: $fs-xs;
+        font-family: $roboto-mono;
+        color: $black;
+        a{
+            &:link{
+                color: $black;
+            }
+
+            &:hover{
+                font-weight: normal;
+                color: $main-color;
+            }
+
+        
+        }
+
+        &:hover{
+            color: $main-color;
+        }
+    }
+}

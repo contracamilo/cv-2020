@@ -1,0 +1,39 @@
+.navigation{
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding-bottom: $spacing-normal;
+        li{
+            padding: 0 $spacing-normal;
+            font-weight: 100;
+            color: $white;
+            font-family: $roboto-mono;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: $fs-xs;
+            position: relative;
+            letter-spacing: 2px;
+
+            &:after{
+                content: '/';
+                position: absolute;
+                right: -0.3rem;
+                top: 0;
+                
+            }
+
+            &:hover{
+                span{
+                    color: $main-color;
+                    transition: 0.4s;
+                }
+            }
+
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

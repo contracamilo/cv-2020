@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	position: relative;
+	overflow-y: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-family: $damion;
+	font-size: 5rem;
+	color: $main-color;
+}
+
+h2 {
+	font-family: $damion;
+	font-size: 6rem;
+}
+
+h3 {
+	font-family: $roboto-mono;
+	font-weight: 300;
+	font-size: $fs-xs;
+	color: $white;
+}
+
+a {
+	text-decoration: none;
+
+	&:visited {
+		color: unset;
+	}
+
+	&:hover {
+		color: $dark-ver-color;
+		font-weight: bold;
+		transition: 0.4s;
+	}
+}
+
+p {
+	margin: 0;
+}

@@ -1,0 +1,164 @@
+.secondary-view{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+    &__circle{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url(../../assets/pic.jpg);
+        background-position: center center;
+        background-size: contain;
+        border-radius: 50%;
+        top: 0%;
+        left: calc(50% - 50px);
+        transition: 0.3s;
+    }
+
+    &__title{
+        width: 45%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+
+        h2 {
+            margin: 0;
+            padding: 12rem 0 0 0;
+        }
+    }
+
+    &__content{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        &--inner{
+            width: 100%;
+            padding: 0 4rem 0 6rem;
+
+            p {
+                padding: $spacing-normal 0;
+                color: $text-color;
+            }
+        }
+    }
+
+    &__card-box{
+        padding: $spacing-xl 0 0 0;
+    }
+
+    &__list-box{
+        list-style: none;
+        padding: 0;
+    }
+
+    &__buttons{
+        display: flex;
+        padding: $spacing-m 0;
+        .button{
+            margin-right: $spacing-normal;
+        }
+    }
+
+    &--light{
+        h2 {
+            color: $white;
+        }
+        .secondary-view__title{
+            background-color: $main-color;
+        }
+    }
+
+    &--dark{
+        .secondary-view__title{
+            background-color: $white;
+        }
+
+        a{
+            color: $main-color;
+        }
+
+        li {
+            &:after{
+                color: $main-color;
+            }
+        }
+    }
+}
+
+#Contact  {
+    .secondary-view__title{
+        background-color: $black;
+    }
+}
+
+
+#Experience{
+    .secondary-view__content{
+        background-image: url(../../assets/software-development-code.gif);
+        position: relative;
+    } 
+    
+    .secondary-view{
+        &__content{
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                filter: opacity(0.4);
+            };
+
+            &--inner{
+                z-index: 1;
+
+                p {
+                    color: $white;
+                }
+            }
+        }
+
+        &__buttons{
+            button{
+                color: $white;
+                border: 1px solid $white;
+                &:before{
+                    background-color: $white;
+                }
+                &:hover{
+                    color: $main-color;
+                    &:before{
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.effect{
+  .user-pic{
+      width: 120px;
+      height: 120px;
+      left: calc(50% - 60px);
+      top: 10%;
+      transition: 0.5s;
+  }
+
+  .secondary-view{
+    &__title {
+        width: 50%;
+        transition: 0.5s;
+    }
+  }
+}

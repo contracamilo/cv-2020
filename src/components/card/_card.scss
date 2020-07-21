@@ -1,0 +1,56 @@
+.card{
+    display: flex;
+    height: 140px;
+
+    &__image{
+        width: 20%;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content{
+        width: 70%;
+        padding: 0 $fs-l;
+
+        h4{
+            margin: 0;
+            font-family: $roboto;
+            color: $white;
+            
+
+        }
+
+        &--location{
+            font-size: $fs-xs;
+            margin-bottom: $spacing-xxs;
+        }
+
+        &--intro{
+            font-size: $fs-xs;
+        }
+
+        &--link{
+            padding: $spacing-xxs 0;
+            color: $white;
+            font-size: $fs-xs;
+            letter-spacing: 1px;
+            border: 0;
+            &:hover{
+                text-decoration: underline;
+                transition: 0.3s;
+            }
+
+            &:active{
+                outline: none;
+                border: 0;
+            }
+        }
+
+        p {
+            padding: 0;
+        }
+    }
+}

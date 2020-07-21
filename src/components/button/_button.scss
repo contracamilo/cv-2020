@@ -1,0 +1,36 @@
+.button {
+    border: 1px solid $main-color;
+    padding: $spacing-xs $spacing-normal;
+    background-color: transparent;
+    color: $main-color;
+    font-family: $roboto-mono;
+    font-size: $fs-xs;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    min-width: 10rem;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: $main-color;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    &:hover{
+        cursor: pointer;
+        color: white;
+        &:before{
+            width: 100%;
+        }
+    }
+
+
+}
