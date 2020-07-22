@@ -11,7 +11,7 @@ const NormalList = ({info = [], title}) => {
         <ul className="normal-list">
             {title && <h4>{title}</h4>}
             {info.map((item, index) => 
-                <li key={index}>
+                <li key={index} className="normal-list__item">
                     {t(item.translation, setText(item.i18N))}
                 </li>)}
         </ul>

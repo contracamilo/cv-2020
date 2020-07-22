@@ -1,0 +1,19 @@
+.normal-list {
+    padding: 0 $spacing-xxs;
+    list-style: none;
+
+    &__item{
+        padding: 1rem 0;
+        border: 1px solid $gray;
+        font-family: $roboto-mono;
+        font-size: $fs-xs;
+        padding: $spacing-xxs;
+        margin-bottom: $spacing-xs;
+        border-radius: 4px; 
+        background-color: rgba($color: $gray, $alpha: 0.2);
+
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}

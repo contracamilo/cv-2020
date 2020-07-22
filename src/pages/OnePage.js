@@ -10,12 +10,13 @@ import Modal from "../components/modal";
 import ModalBody from "../components/modal/ModalBody";
 import LogoGrid from "../components/logoGrid";
 import NormalList from "../components/normalList";
+import { Link } from "react-router-dom";
 
 const OnePage = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isPrcModalOpen, setIsPrcModalOpen] = useState(false);
-  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
-  const [isDetailsTwoOpen, setIsDetailTwosOpen] = useState(false);
+	const [isPrcModalOpen, setIsPrcModalOpen] = useState(false);
+	const [isDetailsOpen, setIsDetailsOpen] = useState(false);
+	const [isDetailsTwoOpen, setIsDetailTwosOpen] = useState(false);
 	const {t} = useTranslation();
 
 	const homeProps = () => {
@@ -67,16 +68,15 @@ const OnePage = () => {
 			withButtons: true,
 			withCircle: true,
 		};
-  };
-  
-  const openDetailsModal = (job) => {
-    if(job === 'Tambourine'){
-      setIsDetailTwosOpen(true);
-    }
-    if(job === 'Globant'){
-      setIsDetailsOpen(true);
-    }
-		
+	};
+
+	const openDetailsModal = (job) => {
+		if (job === "Tambourine") {
+			setIsDetailTwosOpen(true);
+		}
+		if (job === "Globant") {
+			setIsDetailsOpen(true);
+		}
 	};
 
 	const setExpProps = () => {
@@ -95,10 +95,10 @@ const OnePage = () => {
 			light: false,
 			withButtons: true,
 			withCircle: false,
-      optionalContent: jobsInfo,
+			optionalContent: jobsInfo,
 			cards: true,
-      list: false,
-      openModal: openDetailsModal,
+			list: false,
+			openModal: openDetailsModal,
 		};
 	};
 
@@ -162,9 +162,9 @@ const OnePage = () => {
 
 	const onCloseModal = () => {
 		setIsModalOpen(false);
-    setIsPrcModalOpen(false);
-    setIsDetailsOpen(false);
-    setIsDetailTwosOpen(false);
+		setIsPrcModalOpen(false);
+		setIsDetailsOpen(false);
+		setIsDetailTwosOpen(false);
 	};
 
 	return (
@@ -180,7 +180,7 @@ const OnePage = () => {
 			</Viewport>
 			<Viewport {...expProps()}>
 				<SecondaryView {...setExpProps()}>
-					<Button {...expButton()} />
+					<Link to="/portfolio"><Button {...expButton()} /></Link>
 				</SecondaryView>
 			</Viewport>
 			<Viewport {...contactProps()}>
@@ -204,7 +204,7 @@ const OnePage = () => {
 					}
 				/>
 			)}
-      {isDetailsOpen && (
+			{isDetailsOpen && (
 				<Modal
 					component={
 						<ModalBody title={"Details"} modalType="normal" close={onCloseModal}>
@@ -213,7 +213,7 @@ const OnePage = () => {
 					}
 				/>
 			)}
-      {isDetailsTwoOpen && (
+			{isDetailsTwoOpen && (
 				<Modal
 					component={
 						<ModalBody title={"Details"} modalType="normal" close={onCloseModal}>
