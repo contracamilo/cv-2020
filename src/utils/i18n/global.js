@@ -22,6 +22,19 @@ const appTexts = {
     "CONTACT_GITHUB": "Github",
     "CONTACT_TWITTER": "Twitter",
     "CONTACT_TWITCH": "Twitch",
+
+    "TECH_LIST": "Technologies: React, Redux, AEM, Sass, Less, Azure DevOps and so forth.",
+    "PRACTICE_LIST": "Practices: Agile, Kanban, Scrum, TDD, CI and others.",
+    "PROJECT_LIST": "Projects: EY Covid-19 Stimulus Response Tool, Sodimac Microblend Paint Solution and Rimac Insurance and Taxes Platform.",
+    "PROJECT_CLIENTS": "Clients: EY, Rimac, Sodimac and Protección.",
+    "TECH_LIST_TWO": "Technologies: PHP, Jquery, MySql, Html, Sass, Less, Stylus, and so forth.",
+    "PROJECT_CLIENTS_TWO": "Clients: Marriott, Trump, Hilton, Charlestowne, BW, and Windham.",
+
+    "PRACTICE_AGILE": "agile",
+    "TECH_KANBAN": "Kanban",
+    "TECH_SCRUM": "Scrum",
+    "TECH_TDD":"Test Driven Development",
+    "TECH_CI":"Continuous integration and others"
 }
 
 export default appTexts;

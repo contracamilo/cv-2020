@@ -16,6 +16,19 @@
         left: calc(50% - 40%);
         top: 5%;
         background-color: $white;
+
+        &--normal{
+            width: 420px;
+            height: 450px;
+            top: calc(50% - 225px);
+            left: calc(50% - 210px);
+        }
+    }
+
+    &__content{
+        width: 94%;
+        margin: 0 auto;
+        overflow: hidden;
     }
 
     &__head{
@@ -37,7 +50,16 @@
             width: 3rem;
             height: 3rem;
             border-radius: 50%;
-            margin: 0 $spacing-s;
+            margin-right: $spacing-normal;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $main-color;
+                color: $white;
+                transition: 0.4s;
+            }
         }
     }
+
+   
 }

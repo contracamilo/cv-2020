@@ -4,5 +4,12 @@
     "menu_1": "Inicio",
     "menu_2": "Acerca de mi",
     "menu_3": "Experiencia",
-    "menu_4": "Contacto"
+    "menu_4": "Contacto",
+    "tech": "Tecnologías: React, Redux, AEM, Sass, Less, Azure DevOps entre otras.",
+    "Projects" : "Proyectos: EY Covid-19 Stimulus Response Tool, Sodimac Microblend Paint Solution and Rimac Insurance and Taxes Platform.",
+    "practices" : "Practicas : Agile, Kanban, Scrum, TDD, Integracion Continua y otras",
+    "Clients" : "Clientes: EY, Rimac, Sodimac and Protección.",
+    "tech-two": "Tecnologías: PHP, Jquery, MySql, Html, Sass, Less, Stylus entre otras",
+    "Clients-two" : "Clients: Marriott, Trump, Hilton, Charlestowne, BW, and Windham.",
 }
+

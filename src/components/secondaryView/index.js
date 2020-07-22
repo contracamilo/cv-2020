@@ -19,7 +19,8 @@ const SecondaryView = ({
   optionalContent,
   optionalContent2,
   cards,
-  list
+  list,
+  openModal
 }) => {
 
   const [jobs, setJobs] = useState(optionalContent);
@@ -35,9 +36,7 @@ const SecondaryView = ({
     root: null
   });
 
-  console.log(contactLinks, 'damm')
-
-  const renderCards = (info = []) => info.map((info, index) => <Card {...info} key={index}/>);
+  const renderCards = (info = []) => info.map((info, index) => <Card {...info} action={openModal} key={index}/>);
   const renderContactList = (info = []) => info.map((info, index) => <ContactItem {...info} key={index}/>);
 
   useEffect(() => {

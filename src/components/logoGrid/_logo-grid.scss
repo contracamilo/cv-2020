@@ -1,0 +1,32 @@
+.logo-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+
+    &__quad{
+        border: 1px solid $gray;
+        width: $spacing-normal * 7;
+        height: $spacing-normal * 7;
+        margin: $spacing-xxs;
+
+        img {
+            width: 3rem;
+            padding: 1rem 2rem;
+        }
+
+        span{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: $roboto-mono;
+            color: $main-color;
+            font-size: $spacing-xxs;
+        }
+    }
+}

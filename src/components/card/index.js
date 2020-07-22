@@ -12,7 +12,7 @@ const Card = ({companyName, date, location, imgSrc, responsibilities, action}) =
                     <h4>{companyName}</h4>
                     <p className="card__content--location">{`${date} / ${location}`}</p>
                     <p className="card__content--intro">{responsibilities}</p>
-                    <div className="card__content--link" role="button"  tabindex="0" onclick={action}>+ view details</div>
+                    <div className="card__content--link" role="button"  tabindex="0" onClick={() => action(companyName)}>+ view details</div>
                 </div>
             </div>
         </FadeIn>

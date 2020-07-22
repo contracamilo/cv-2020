@@ -46,4 +46,70 @@ export const contactInfo = [
         mailto: "camilo.riveradev@mail.com",
         text: "camilo.riveradev@mail.com"
     },
+];
+
+export const practices = [
+    {
+        translation: "agile",
+        text: "Agile",
+        i18N: "PRACTICE_AGILE"
+    },
+    {
+        translation: "kanban",
+        text: "Kanban",
+        i18N: "TECH_KANBAN"
+    },
+    {
+        translation: "scrum",
+        text: "Scrum",
+        i18N: "TECH_SCRUM"
+    },
+    {
+        translation: "tdd",
+        text: "Test Driven Development",
+        i18N: "TECH_TDD"
+    },
+    {
+        translation: "ci",
+        text: "Continuous integration and others",
+        i18N: "TECH_CI"
+    }
+];
+
+export const jobOneInfo = [
+    {
+        translation: "tech",
+        text: "Technologies: React, Redux, AEM, Sass, Less, Azure DevOps and so forth.",
+        i18N: "TECH_LIST"
+    },
+    {
+        translation: "practices",
+        text: "Practices: Agile, Kanban, Scrum, TDD, CI and others.",
+        i18N: "PRACTICE_LIST"
+    },
+    {
+        translation: "Projects",
+        text: "Projects: EY Covid-19 Stimulus Response Tool, Sodimac Microblend Paint Solution and Rimac Insurance and Taxes Platform.",
+        i18N: "PROJECT_LIST"
+    },
+
+    {
+        translation: "Clients",
+        text: "Clients: EY, Rimac, Sodimac and Protección.",
+        i18N: "PROJECT_CLIENTS"
+    }   
+];
+
+export const jobTwoInfo = [
+    {
+        translation: "tech-two",
+        text: "Technologies: PHP, Jquery, MySql, Html, Sass, Less, Stylus, and so forth.",
+        i18N: "TECH_LIST_TWO"
+    },
+
+    {
+        translation: "Clients-two",
+        text: "Clients: Marriott, Trump, Hilton, Charlestowne, BW, and Windham.",
+        i18N: "PROJECT_CLIENTS_TWO"
+    }   
 ]
