@@ -10,4 +10,44 @@
         margin-top: $spacing-normal * 2;
     }
 
+    h1{
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 0rem;
+            height: 0rem;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-50%);
+            border-radius: 50%;
+            border: 2px dotted #acacac;
+            z-index: -1;
+        }
+    }
+
+    &.bg-img{
+        background-image: url(../../assets/main-pic.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center -20px;
+        transition: 0.5s;
+        filter: grayscale(100%);
+    }
+
+    &.effect{
+        filter:unset ;
+        transition: 0.5s;
+        
+        h1{
+            &:before{
+                width: 26rem;
+                height: 26rem;
+                transition: 0.3s;
+            }
+        }
+    }
+
 }
