@@ -12,6 +12,10 @@
         height: $spacing-normal * 7;
         margin: $spacing-xxs;
 
+        @include respond(tab-port) {
+            margin: 0.5rem 0.2rem;
+        }
+
         img {
             width: 3rem;
             padding: 1rem 2rem;

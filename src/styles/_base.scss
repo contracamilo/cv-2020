@@ -4,12 +4,21 @@ body {
 	overflow-y: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	@include respond(tab-port) {
+		overflow-y: unset;
+	}
 }
 
 h1 {
 	font-family: $damion;
 	font-size: 5rem;
 	color: $main-color;
+
+	
+	@include respond(tab-port) {
+		font-size: 3rem;
+	}
 }
 
 h2 {

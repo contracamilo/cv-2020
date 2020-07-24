@@ -1,8 +1,18 @@
 .navigation{
+    @include respond(tab-port) {
+        width: 100%;
+        display: none;
+    }
+
     ul{
         display: flex;
         list-style-type: none;
         padding-bottom: $spacing-normal;
+
+        @include respond(tab-port) {
+           padding: 0;
+        }
+
         li{
             padding: 0 $spacing-normal;
             font-weight: 100;
@@ -13,6 +23,11 @@
             font-size: $fs-xs;
             position: relative;
             letter-spacing: 2px;
+
+            @include respond(tab-port) {
+                font-size: 0.65rem;
+                padding: 0 $spacing-xs;
+            }
 
             &:after{
                 content: '/';

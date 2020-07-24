@@ -22,6 +22,11 @@
             height: 450px;
             top: calc(50% - 225px);
             left: calc(50% - 210px);
+
+            @include respond(tab-port) {
+                width: 80%;
+                left: calc(50% - 40%);
+            }
         }
     }
 
@@ -29,6 +34,12 @@
         width: 94%;
         margin: 0 auto;
         overflow: hidden;
+
+        @include respond(tab-port) {
+            width: 96%;
+            height: 81%;
+            overflow: scroll;
+        }
     }
 
     &__head{

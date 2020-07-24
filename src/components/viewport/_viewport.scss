@@ -18,9 +18,14 @@
     &--size{
         width: 100%;
         height: 100vh;
+
+        @include respond(tab-port) {
+            height: 100vh;
+        }
     }
 
     .viewport-inner{
         height: 100%;
+
     }
 }
