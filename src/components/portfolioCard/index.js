@@ -1,7 +1,6 @@
 import React from 'react';
 import setText from "../../utils/i18n/textSetter";
 import {useTranslation} from "react-i18next";
-import { FadeIn } from '../animations';
 
 const PortfolioCard = ({imgSrc, projectName, stack, desc, privateProject, projectUrl}) => {
     const {t} = useTranslation();
