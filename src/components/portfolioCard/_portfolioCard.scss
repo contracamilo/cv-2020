@@ -1,0 +1,56 @@
+.portfolio-card{
+    width: 44%;
+    max-width: 430px;
+    border: 1px solid $gray;
+    padding: $spacing-xxs;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2.5%;
+    border-radius: 5px;
+
+    &__pic{
+        margin-bottom: $fs-normal;
+
+        img{
+            width: 100%;
+            height: auto;
+            max-width: 430px;
+        }
+    }
+
+    &__content{
+        background-color: rgba($color: $gray, $alpha: 0.5);
+        border-radius: 5px;
+
+        h3{
+            font-family: $roboto;
+            font-weight: lighter;
+            letter-spacing: -1px;
+            color:  $main-color;
+            font-size: 1.5rem;
+            margin: 0 0 $spacing-xxs 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+            padding: 0 $spacing-xs;
+            li {
+                font-size: 0.6rem;
+                font-family: $roboto-mono;
+                padding: 2px 0;
+
+                &:last-child{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-content: center;
+                    align-items: center;
+                    padding: $fs-xs 0 0 0;
+                    font-size: $spacing-xs;
+                    color:  $main-color;
+                }
+            }
+        }
+    }
+}

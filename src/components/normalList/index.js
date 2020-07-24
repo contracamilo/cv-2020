@@ -5,8 +5,6 @@ import {useTranslation} from "react-i18next";
 const NormalList = ({info = [], title}) => {
     const {t} = useTranslation();
 
-
-
     return (
         <ul className="normal-list">
             {title && <h4>{title}</h4>}

@@ -27,12 +27,17 @@ h3 {
 a {
 	text-decoration: none;
 
+	&:link{
+		color: unset;
+	}
+
 	&:visited {
 		color: unset;
 	}
 
 	&:hover {
 		color: $dark-ver-color;
+		text-decoration: underline;
 		font-weight: bold;
 		transition: 0.4s;
 	}

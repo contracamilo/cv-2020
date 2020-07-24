@@ -34,7 +34,14 @@ const appTexts = {
     "TECH_KANBAN": "Kanban",
     "TECH_SCRUM": "Scrum",
     "TECH_TDD":"Test Driven Development",
-    "TECH_CI":"Continuous integration and others"
+    "TECH_CI":"Continuous integration and others",
+
+
+    "PORT_TITLE": "Portfolio",
+    "PORT_BUTTON": "Back",
+    "PORT_FOOT_PRINT" : "last update July 2020",
+    "PORT_STACK": "Stack:",
+    "PORT_DESC" : "Description:"
 }
 
 export default appTexts;
