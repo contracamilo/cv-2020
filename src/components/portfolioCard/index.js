@@ -6,11 +6,11 @@ const PortfolioCard = ({imgSrc, projectName, stack, desc, privateProject, projec
     const {t} = useTranslation();
 
     return (
-            <div className="portfolio-card">
-            <div className="portfolio-card__pic">
+            <div className="portfolio-card animated;">
+            <div className="portfolio-card__pic animated">
                 <img src={imgSrc} alt={projectName} />
             </div>
-            <div className="portfolio-card__content">
+            <div className="portfolio-card__content animated">
                     <ul>
                         <li><h3>{projectName}</h3></li>
                         <li><b>{t('port_card_stack', setText('PORT_STACK'))}</b> {stack}</li>

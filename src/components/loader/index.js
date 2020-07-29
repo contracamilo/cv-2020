@@ -2,8 +2,8 @@ import React from 'react';
 
 const Loader = () => {
     return (
-        <div className={'loader'}>
-            ..loading
+        <div className={'loader animated'}>
+            <div class="lds-heart"><div></div></div>
         </div>
     );
 }

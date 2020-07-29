@@ -1,6 +1,11 @@
 .section-title {
     letter-spacing: -1px;
     vertical-align: middle;
+    font-size: $fs-normal;
+    
+    @include respond(big-desktop) {
+        font-size: $spacing-normal;
+    }
     
     &.dark{
         color: $black;
@@ -10,10 +15,14 @@
         color: $white;
     }
     strong {
-        font-size: $fs-xl;
+        font-size: 2rem;
         font-weight: bold;
         padding: 0 0.2rem;
         font-family: $roboto;
         letter-spacing: 0.02rem;
+
+        @include respond(big-desktop) {
+            font-size: $spacing-xl;
+        }
     }
 }

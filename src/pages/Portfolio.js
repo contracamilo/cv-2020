@@ -27,9 +27,9 @@ const Portfolio = () => {
 		  if (entry.isIntersecting) {
 			setTimeout(() => {
 				box.classList.add("effect");
-            }, 300);
+      }, 300);
             
-            setTimeout(() => {
+      setTimeout(() => {
 				box.classList.add("effect-after");
 			}, 700);
 			//if you need put the class only once
@@ -48,13 +48,13 @@ const Portfolio = () => {
 
     return (
         <>
-        <div className="portfolio">
-            <nav className="portfolio__nav">
+        <div className="portfolio animated">
+            <nav className="portfolio__nav animated">
                     <div className="portfolio__pic"></div>
                     <h1>{t('port_title', setText('PORT_TITLE'))}</h1>
                     <Link to="/"><Button text={t('port_button', setText('PORT_BUTTON'))} dark={true}/></Link>
             </nav>
-            <main className="portfolio__content">
+            <main className="portfolio__content animated">
                 <section>
                     {portfolioItems.length && portfolioItems.map((item, index) => <PortfolioCard {...item} key={index}/>) }
                 </section>

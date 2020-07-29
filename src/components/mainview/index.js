@@ -35,8 +35,8 @@ const MainView = ({id}) => {
 	  }, [setElements]);
 
 	return (
-		<section id={id} aria-labelledby="home" className="main-view bg-img">
-			<FadeInTop><h3>{t("job", setText("HOME_JOB"))}</h3></FadeInTop>
+		<section id={id} aria-labelledby="home" className="main-view animated bg-img">
+			<FadeInTop><h3 className="animated">{t("job", setText("HOME_JOB"))}</h3></FadeInTop>
 			<FadeIn>
 				<h1>{t("name", setText("HOME_OWNER"))}</h1>
 			</FadeIn>

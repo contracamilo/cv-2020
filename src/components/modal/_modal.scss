@@ -17,6 +17,11 @@
         top: 5%;
         background-color: $white;
 
+        @include respond(big-desktop) {
+            width: 75%;
+            left: calc(50% - 36%);
+        }
+
         &--normal{
             width: 420px;
             height: 450px;

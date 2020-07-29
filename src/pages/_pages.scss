@@ -37,10 +37,17 @@
 		width: 0px;
 		height: 85vh;
 		overflow: hidden;
-		overflow-x: hidden ;
+		overflow-x: hidden;
 		padding: $spacing-l;
 		opacity: 0;
 		transition: 0.4s;
+		
+		@extend .animated;
+
+		@include respond(big-desktop) {
+			height: 90vh;
+			overflow-x: hidden;
+		}
 
 		section {
 			display: flex;
@@ -102,7 +109,7 @@
 	&.effect {
 		.portfolio__nav {
 			width: 20%;
-			transition: 0.3s;
+			@extend .animated;
 
 			@include respond(tab-port) {
 				width: 100%;
@@ -141,11 +148,18 @@
 			overflow: scroll;
 			transition: 0.2s;
 			opacity: 1;
+			@extend .animated;
 
 			@include respond(tab-port) {
 				width: 90%;
 				margin: 0 auto;
 				padding: 1rem 0 3rem;
+				
+			}
+
+			@include respond(big-desktop) {
+				height: 90vh;
+				overflow-x: hidden;
 			}
 		}
 	}

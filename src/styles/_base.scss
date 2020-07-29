@@ -4,7 +4,7 @@ body {
 	overflow-y: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
+	@extend .animated;
 	@include respond(tab-port) {
 		overflow-y: unset;
 	}
@@ -54,6 +54,7 @@ a {
 
 p {
 	margin: 0;
+	line-height: 1.4rem;
 }
 
 

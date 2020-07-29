@@ -62,10 +62,10 @@ const SecondaryView = ({
     <section
       id={id}
       aria-labelledby={ariaLabel}
-      className={`secondary-view secondary-view--${light ? 'light' : 'dark'}`}
+      className={`secondary-view animated secondary-view--${light ? 'light' : 'dark'}`}
     >
-      {withCircle && <div className="secondary-view__circle user-pic" />}
-        <div className="secondary-view__title">
+      {withCircle && <div className="animated secondary-view__circle user-pic" />}
+        <div className="animated secondary-view__title">
           <FadeIn>
             <h2>{sectionTitle}</h2>
             <Nav />

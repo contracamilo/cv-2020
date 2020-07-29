@@ -8,7 +8,7 @@ const appTexts = {
 
     "ABOUT_TITLE": "Whoami",
     "ABOUT_BODY": "Hello Friends I'm Camilo Rivera and I have been building apps for over 4+ years, focusing on JavaScript projects, originally UI/UX designer turned web developer. I like to create and code interfaces for good human understanding and leave my mark with usable products.  I´ve participated in multiple projects for multinational companies.",
-    "ABOUT_BODY_SEC": "Based in Medellin, Colombia.",
+    "ABOUT_BODY_SEC": "I´m ready to join your team, I have experience on component design and coding, code reviews, pair programming, backlog building and prioritization. I worked on my last project with React and Microsoft Technologies. Nowadays I`m based in Medellin, Colombia.",
     "ABOUT_BUTTON_TECH": "Tech and Tools",
     "ABOUT_BUTTON_PRC": "Practices",
 
