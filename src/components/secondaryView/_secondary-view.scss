@@ -159,6 +159,8 @@
   .secondary-view__content {
     background-image: url(../../assets/software-development-code.gif);
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include respond(big-desktop) {
       background-size: cover;
