@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Damion&family=Roboto&family=Roboto+Mono:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Roboto&family=Roboto+Mono:wght@300;500&display=swap");
 
-$damion: 'Damion', serif;
-$roboto: 'Roboto', sans-serif;
-$roboto-mono:'Roboto Mono', monospace;
+$damion: "Damion", serif;
+$roboto: "Roboto", sans-serif;
+$roboto-mono: "Roboto Mono", monospace;
 
-$main-color: #EA284B;
-$purple: #43204A;
-$dark-ver-color: #C22047;
+$main-color: #ea284b;
+$purple: #43204a;
+$dark-ver-color: #c22047;
 $dark-purple: #422343;
-$light-purple: #7F1E47;
+$light-purple: #7f1e47;
 
 $black: #292929;
 $white: #ffffff;
 $text-color: #666666;
 $gray: #dbdbdb;
-
 
 /*--Spacing system--*/
 $spacing-xxs: 0.6rem;
