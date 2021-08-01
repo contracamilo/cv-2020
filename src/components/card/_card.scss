@@ -1,81 +1,81 @@
-.card{
-    display: flex;
-    height: 140px;
+.card {
+  display: flex;
+  height: 140px;
 
-    @include respond(big-desktop) {
-       margin-bottom: 3rem;
+  @include respond(big-desktop) {
+    margin-bottom: 3rem;
+  }
+
+  &__image {
+    width: 17%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    width: 70%;
+    padding: 0 $fs-l;
+
+    h4 {
+      margin: 0;
+      font-family: $roboto;
+      color: $white;
+      color: #cccccc;
+
+      @include respond(big-desktop) {
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+      }
     }
 
-    &__image{
-        width: 20%;
-        height: auto;
-        img{
-            width: 100%;
-            height: auto;
-        }
+    &--location {
+      font-size: 0.7rem;
+      margin-bottom: 0.2rem;
+
+      @include respond(big-desktop) {
+        font-size: $fs-xs;
+        margin-bottom: $spacing-xxs;
+      }
     }
 
-    &__content{
-        width: 70%;
-        padding: 0 $fs-l;
-
-        h4{
-            margin: 0;
-            font-family: $roboto;
-            color: $white;
-            color: #cccccc;
-            
-            @include respond(big-desktop) {
-                font-size: 1.3rem;
-                margin-bottom: 0.3rem;
-            }
-        }
-
-        &--location{
-            font-size: 0.7rem;
-            margin-bottom: 0.2rem;
-
-            @include respond(big-desktop) {
-                font-size: $fs-xs;
-                margin-bottom: $spacing-xxs;
-            }
-        }
-
-        &--intro{
-            font-size: $fs-xs;
-            line-height: 1rem;
-            @include respond(big-desktop) {
-                font-size: $fs-normal;
-                line-height: 1.3rem;
-                margin-bottom: 0.5rem;
-            }
-        }
-
-        &--link{
-            padding: $spacing-xxs 0;
-            color: $white;
-            font-size: 0.7rem;
-            letter-spacing: 1px;
-            border: 0;
-            @extend .animated;
-
-            @include respond(big-desktop) {
-                font-size: $fs-normal;
-            } 
-            
-            &:hover{
-                text-decoration: underline;
-                transition: 0.3s;
-            }
-
-            &:active{
-                outline: none;
-                border: 0;
-            }
-        }
-
-        p {
-            padding: 0;
-        }
+    &--intro {
+      font-size: $fs-xs;
+      line-height: 1rem;
+      @include respond(big-desktop) {
+        font-size: $fs-normal;
+        line-height: 1.3rem;
+        margin-bottom: 0.5rem;
+      }
     }
+
+    &--link {
+      padding: $spacing-xxs 0;
+      color: $white;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      border: 0;
+      @extend .animated;
+
+      @include respond(big-desktop) {
+        font-size: $fs-normal;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        transition: 0.3s;
+      }
+
+      &:active {
+        outline: none;
+        border: 0;
+      }
+    }
+
+    p {
+      padding: 0;
+    }
+  }
 }
