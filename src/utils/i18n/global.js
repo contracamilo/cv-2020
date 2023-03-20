@@ -1,6 +1,6 @@
 const appTexts = {
-  HOME_JOB: ">WEB.DEVELOPER/FRONT-END",
-  HOME_OWNER: "Camilo Rivera Quintero.",
+  HOME_JOB: ">SOFTWARE.DEVELOPER",
+  HOME_OWNER: "Camilo Rivera Q.",
   HOME_MENU_ITEM_1: "Home",
   HOME_MENU_ITEM_2: "About",
   HOME_MENU_ITEM_3: "Experience",
@@ -8,13 +8,13 @@ const appTexts = {
 
   ABOUT_TITLE: "Whoami",
   ABOUT_BODY:
-    "Hello Friends I'm Camilo Rivera and I have been building apps for over 4+ years, focusing on JavaScript projects, originally UI/UX designer turned web developer. I like to create and code interfaces for good human understanding and leave my mark with usable products.  I´ve participated in multiple projects for multinational companies.",
+    "I'm Camilo Rivera. With over 6 years of experience in app development, I’m specialized in full-stack JavaScript projects, transitioning from a UI/UX designer to a software developer. I strive to design user-friendly interfaces and leave a lasting impact on usable products. I have contributed to various projects with multinational companies and am currently furthering my education to become a software engineer.",
   ABOUT_BODY_SEC:
-    "I´m ready to join your team, I have experience on component design and coding, code reviews, pair programming, backlog building and prioritization. I worked on my last project with React and Microsoft Technologies. Nowadays I`m based in Medellin, Colombia.",
+    "I'm ready to join your team, just keep in touch. I`m based in Bogotá, Colombia.",
   ABOUT_BUTTON_TECH: "Tech and Tools",
   ABOUT_BUTTON_PRC: "Practices",
 
-  EXP_TITLE: "DoThis",
+  EXP_TITLE: "",
   EXP_BUTTON_PRJ: "Projects",
 
   CONTACT_TITLE: "KeepInTouch",
