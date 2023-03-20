@@ -14,11 +14,11 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    background-image: url(../../assets/pic.jpg);
+    background-image: url(../../assets/pic2.png);
     background-position: center center;
     background-size: contain;
     border-radius: 50%;
-    top: 0%;
+    top: 0;
     left: calc(50% - 50px);
     transition: 0.3s;
 
@@ -37,7 +37,7 @@
     @extend .animated;
 
     @include respond(tab-port) {
-      width: 0%;
+      width: 0;
       padding: $spacing-xxs 0;
     }
 
@@ -46,7 +46,7 @@
       padding: 12rem 0 0 0;
 
       @include respond(tab-port) {
-        padding: 0rem 0 0 0;
+        padding: 0 0 0 0;
         font-size: 3rem;
       }
 
