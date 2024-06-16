@@ -65,9 +65,9 @@ const OnePage = () => {
       sectionTitle: sectionName,
       title: "whoAmi",
       content: {
-        before: "const",
-        main: "WhoAmI",
-        after: "=(dev)=>",
+        before: "",
+        main: "Hello Friends!",
+        after: "",
         dark: true,
         body: t("name", setText("ABOUT_BODY")),
         secondaryText: t("name", setText("ABOUT_BODY_SEC")),
@@ -85,7 +85,7 @@ const OnePage = () => {
     if (job === "Globant") {
       setIsDetailsOpen(true);
     }
-    if (job === "Zemoga") {
+    if (job === "Zemoga by Media.Monks") {
       setIsDetailThreeOpen(true);
     }
   };
@@ -98,9 +98,9 @@ const OnePage = () => {
       sectionTitle: sectionName,
       title: "whoAmi",
       content: {
-        before: "const",
-        main: "DoThis",
-        after: "=(work)=>",
+        before: "",
+        main: "",
+        after: "",
         dark: false,
       },
       light: false,
@@ -119,11 +119,11 @@ const OnePage = () => {
       id: sectionName,
       ariaLabel: sectionName,
       sectionTitle: sectionName,
-      title: "whoAmi",
+      title: "Contact",
       content: {
-        before: "const",
-        main: "KeepInTouch",
-        after: "=(mail)=>",
+        before: "",
+        main: "Keep up the conversation.",
+        after: "",
         dark: true,
         body: t("name", setText("CONTACT_BODY")),
       },

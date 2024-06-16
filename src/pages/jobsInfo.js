@@ -1,10 +1,10 @@
 export const jobsInfo = [
   {
-    companyName: "Zemoga",
+    companyName: "Zemoga by Media.Monks",
     date: "Feb 2021 - Current day",
     location: "Bogotá - Medellin",
     responsibilities:
-      "Responsibilities: Component design and coding, Code reviews, pair programming, Backlog building and prioritization.",
+      "Sr. Front-end developer",
     technologies:
       "Javascript, Node, TypeScript, React, GraphQL NX suite, TestCafe, testing Library",
     practices: "Agile, Scrum, TDD, CI and others.",
@@ -18,7 +18,7 @@ export const jobsInfo = [
     date: "Apr 2019 – Jan 2021",
     location: "Medellín",
     responsibilities:
-      "Responsibilities: Component design and coding, Code reviews, pair programming, Backlog building and prioritization.",
+      "Web UI developer",
     technologies: "React, Redux, AEM, Sass, Less, Azure DevOps and so forth.",
     practices: "Agile, Kanban, Scrum, TDD, CI and others.",
     projects:
@@ -31,8 +31,7 @@ export const jobsInfo = [
     companyName: "Tambourine",
     date: "2017 - Mar 2019",
     location: "Fort Lauderdale - Bogotá",
-    responsibilities:
-      "Responsibilities: App development for the marketing department, web development for hotels and tourism, work remotely for the client.",
+    responsibilities: "Sr. Front-end developer",
     technologies: "PHP, Jquery, MySql, Html, Sass, Less, Stylus, and so forth.",
     practices: "",
     projects:
