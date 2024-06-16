@@ -9,6 +9,7 @@
     "gsap": "^3.6.0",
     "i18next": "^19.6.2",
     "i18next-xhr-backend": "^3.2.2",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-gsap": "^2.2.1",
